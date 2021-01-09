@@ -5,7 +5,7 @@ class Dice
   end
 
   def number_of_dice(number)
-    #number.times { puts roll }
+    number.times { puts roll }
   end
 
 end

@@ -17,9 +17,10 @@ describe Dice do
     expect(dice).to respond_to(:number_of_dice).with(1).argument
   end
 
-
-  #it 'it should be random' do
-
-  #end
+  it 'should be random' do
+    dice = Dice.new
+    allow(dice).to receive(:rand).and_return(5)
+    expect(dice.roll).to eq 5
+  end
 
  end
